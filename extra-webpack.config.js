@@ -18,7 +18,7 @@ module.exports = config => {
             exposes: {
                 // the "./" in the begining is important because on host, any imports from './NoInternetModule' will 
                 // behave as if it's importing the remote module.
-                './NoInternetModule': './src/app/components/no-internet/no-internet.module.ts',
+                './NoInternetModule': './src/app/components/no-internet/no-internet-federated.module.ts',
             },
             shared: {
                 "@angular/core": { strictVersion: true, requiredVersion: ">=14.1.0", singleton: true },
