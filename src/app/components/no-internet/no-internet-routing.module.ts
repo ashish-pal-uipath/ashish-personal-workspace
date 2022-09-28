@@ -5,6 +5,6 @@ import { NoInternetComponent } from './no-internet.component';
 const routes: Routes = [{ path: '', component: NoInternetComponent }];
 
 @NgModule({
-  imports: [], //[RouterModule.forChild(routes)]
+  imports: [RouterModule.forChild(routes)],
 })
 export class NoInternetRoutingModule {}
